@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA</title>
+</head>
+
+<body>
+    <h1>usages</h1>
+    <ul>
+        <li>Mobile applications (specially Android apps)</li>
+        <li>Desktop applications</li>
+        <li>Web applications</li>
+        <li>Web servers and application servers</li>
+        <li>Games</li>
+        <li>Database connection</li>
+    </ul>
+    <h1>Features</h1>
+    <ul>
+        <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+        <li>It is open-source and free</li>
+        <li>It is secure, fast and powerful</li>
+        <li>It has a huge community support</li>
+        <li>Object-Oriented</li>
+        <li>Platform Independent</li>
+        <li>Robust</li>
+        <li>Multi-Threaded</li>
+    </ul>
+    <h1>Install</h1>
+    <ul>
+        <li>Download latest Jdk and install.</li>
+        <li>If it is ubuntu or Mac no setup is required. for window setup ENV variables</li>
+    </ul>
+    <h1>JSHELL</h1>
+    <ul>
+        <li>interactive tool for learning the Java programming language and prototyping Java code.</li>
+        <li>exit: /exit</li>
+    </ul>
+    <h1>JVM: java virtual machine</h1>
+    <ul>
+        <li>H/W => OS => JVM</li>
+        <li>It is an abstract machine that provides the runtime environment in which Java bytecode can be executed</li>
+        <li>JVM plays a crucial role in the execution of Java code and is an important component of the Java platform
+        </li>
+        <li>we can divide jvm into two parts. 1. stack memory. 2. Heap memory</li>
+        <li>stack memory: it stores values in key, value format (like 2*n table)</li>
+        <li>it stores local variable. varaible name as key and value as value</li>
+        <li>if it finds object creation like (Calc val = new Calc)</li>
+        <li>it stores value in heap memeort in table (like 1*n table)</li>
+        <li>table top contains unique memory addess and inside it store instance values and method value</li>
+        <li>again each method calls (val.getData()) will be stored in seprate stacks</li>
+        <li>heap conatins special thing for handling strings called STRING CONATSNT POOL. </li>
+        <li>if it face same string (case senstive). then it will not create new refernce in memory. both will point to
+            same memory</li>
+    </ul>
+    <h1>JRE: java runtime environment</h1>
+    <ul>
+        <li>H/W => os => JRE (inside jvm)</li>
+        <li>it is a software package that provides the necessary libraries, Java Virtual Machine (JVM), and other
+            components required to run Java applications.</li>
+        <li>the JRE is a software package that provides the necessary components to run Java applications, including the
+            JVM and Java class libraries.</li>
+    </ul>
+    <h1>JDK: java development kit</h1>
+    <ul>
+        <li>H/W => OS => JDK (INSIDE JRE (INSIDE JVM))</li>
+        <li>It is a software development kit that includes the necessary tools and libraries to develop, compile, and
+            debug Java applications.</li>
+    </ul>
+    <p>When you are working with text, it must be wrapped inside double quotations marks ""</p>
+    <section>
+        <h1>Data types</h1>
+        <ul>
+            <li>Primitive: Integer, Float, Character, Boolean</li>
+            <li>non-primitive: String, Array, Classes</li>
+        </ul>
+        <h2>Primitive</h2>
+        <ul>
+            <li>Integer: Byte(1 byte), Short(2 byte), Int(4 byte), Long(8 byte)</li>
+            <li>Float: Double(8 byte), Float(4 byte).</li>
+            <li>Character: Character(2 byte)</li>
+            <li>Boolean: (1 byte)</li>
+        </ul>
+        <h2>Default</h2>
+        <ul>
+            <li>for float default is double. ex: float f1 = 0.6; // double</li>
+            <li>float f2 = 0.6f; // float type</li>
+        </ul>
+        <h2>Type conversion</h2>
+        <ul>
+            <li>type conversion in Java is the process of converting a value from one data type to another data type.
+            </li>
+            <li>Implicit type conversion occurs automatically when a value of a smaller data type is assigned to a
+                variable of a larger data type,</li>
+            <li>while explicit type conversion requires an explicit cast operator and can result in the loss of data.
+            </li>
+            <li>Widening Casting (automatically) - converting a smaller type to a larger type size
+                byte -> short -> char -> int -> long -> float -> double</li>
+            <li>Narrowing Casting (manually) - converting a larger type to a smaller size type
+                double -> float -> long -> int -> char -> short -> byte</li>
+            <li>Type promotion: it is a process that converts an atomic value from its original type to the type that is
+                expected by an expression</li>
+        </ul>
+
+    </section>
+    <h1>Operators</h1>
+    <ul>
+        <li>Arithmetic Operators: +, - ,*, /, %, ++, --</li>
+        <li>Assignment operator: =, +=, -=, *=, /=, %= , &=, |=, >>= , <<=< /li>
+        <li>Comparison Operators: >, <,==, !=,>=, <=< /li>
+        <li>Logical Operators: &&, ||, !</li>
+    </ul>
+    <h1>Method Overloading</h1>
+    <p>With method overloading, multiple methods can have the same name with different parameters</p>
+    <h1>Scope</h1>
+    <ul>
+        <li>Method Scope: Variables declared directly inside a method are available anywhere in the method following the
+            line of code in which they were declared:</li>
+        <li>Block Scope: A block of code refers to all of the code between curly braces {}.</li>
+    </ul>
+
+    <h1>OOPS: object Object-Oriented programming</h1>
+    <ul>
+        <li>programming is about creating objects that contain both data and methods.</li>
+        OOP is faster and easier to execute
+        <li>OOP provides a clear structure for the programs</li>
+        <li>OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify
+            and debug</li>
+        <li>OOP makes it possible to create full reusable applications with less code and shorter development time</li>
+        <li>properties or fields or attributes</li>
+        <li>methods or behaviour</li>
+    </ul>
+    <h1>Access Modifiers: controls the access level</h1>
+    <ul>
+        <li>classes: public, default</li>
+        <li>attributes, methods and constructors: public, default, private, protected</li>
+    </ul>
+    <h1>Non-Access Modifiers</h1>
+    <ul>
+        <li>classes: final, abstract</li>
+        <li>attributes and methods: final, static, abstract, transient, synchronized, volatile</li>
+    </ul>
+
+</body>
+
+</html>
