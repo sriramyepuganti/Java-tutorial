@@ -119,6 +119,7 @@
     <ul>
         <li>Method Scope: Variables declared directly inside a method are available anywhere in the method following the
             line of code in which they were declared:</li>
+        <li>A local variable cannot be defined with "static" keyword.</li>
         <li>Block Scope: A block of code refers to all of the code between curly braces {}.</li>
     </ul>
 
@@ -143,7 +144,100 @@
         <li>classes: final, abstract</li>
         <li>attributes and methods: final, static, abstract, transient, synchronized, volatile</li>
     </ul>
+    <h1>Naming convention</h1>
+    <ul>
+        <li>Class: start with uppercase. it should be nouns. ex: Color, BankAccount</li>
+        <li>Interface: start with uppercase. it should adjective. ex: Runnable, Printiable</li>
+        <li>varaiable, Method: start with lower case. ex: isTrue, getValue()</li>
+        <li>Package: start with lower case. if has multiple words use .</li>
+        <li>constants: use uppercase. ex: MAX_VALUE</li>
+    </ul>
+    <h1>IMP</h1>
+    <ul>
+        <li>Instance variable doesn't get memory at compile time. It gets memory at runtime when an object or instance
+            is created</li>
+        <li>The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.</li>
+        <li>Method Signature: Every method has a method signature. It is a part of the method declaration. It includes
+            the method name and parameter list.</li>
+        <li>It is called constructor because it constructs the values at the time of object creation. It is not
+            necessary to write a constructor for a class. It is because java compiler creates a default constructor if
+            your class doesn't have any.</li>
+        <li>A Java constructor cannot be abstract, static, final, and synchronized</li>
+        <li>Inheritance represents the IS-A relationship which is also known as a parent-child relationship.</li>
+        <li>If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship.
+        </li>
+        <li>Instance Initializer block is used to initialize the instance data member. It run each time when object of
+            the class is created.</li>
+        <li>Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is
+            resolved at runtime rather than compile-time.</li>
+        <li>Connecting a method call to the method body is known as binding.</li>
+        <li>If there is any private, final or static method in a class, there is static binding.</li>
+        <li>When type of the object is determined at run-time, it is known as dynamic binding.</li>
+        <li>The wrapper class in Java provides the mechanism to convert primitive into object and object into primitive.
+        </li>
+        <li>java.util package: The java.util package provides the utility classes to deal with objects.</li>
+        <li>Synchronization: Java synchronization works with objects in Multithreading.
+        </li>
+        <li>Serialization: We need to convert the objects into streams to perform the serialization. If we have a
+            primitive value, we can convert it in objects through the wrapper classes.</li>
+        <li>The automatic conversion of primitive data type into its corresponding wrapper class is known as autoboxing
+        </li>
+        <li>The automatic conversion of wrapper type into its corresponding primitive type is known as unboxing.</li>
+        <li>There is only call by value in java, not call by reference. If we call a method passing a value, it is known
+            as call by value. The changes being done in the called method, </li>
+        <li>Java strictfp keyword ensures that you will get the same result on every platform if you perform operations
+            in the floating-point variable.</li>
+    </ul>
+    <h1>JVM architecture:</h1>
+    <p> stands for Java Virtual Machine. It is a software component that runs Java bytecode, allowing Java applications
+        to run on any platform without the need for recompilation. The JVM architecture consists of several components
+        that work together to execute Java code. Here's a simple explanation of each component:</p>
+    <li>
+        Class Loader
+        The Class Loader is responsible for loading the classes required by the Java program. It loads the bytecode of
+        the
+        classes into the JVM's memory, making them available for execution.
 
+    </li>
+    <li>
+        Runtime Data Area
+        The Runtime Data Area is where the JVM stores all the data required during program execution. It is divided into
+        several components, including the method area, heap, stack, and program counter.
+    </li>
+    <li>
+        Execution Engine
+        The Execution Engine is responsible for executing the bytecode instructions stored in the JVM's memory. It
+        consists
+        of two components: the interpreter and the just-in-time (JIT) compiler. The interpreter reads the bytecode and
+        executes it directly, while the JIT compiler translates frequently executed bytecode into machine code for
+        faster
+        execution.
+    </li>
+    <li>
+        Native Method Interface (JNI)
+        The Native Method Interface is a programming interface that allows Java code to call native methods written in
+        other
+        programming languages, such as C or C++.
+    </li>
+    <li>
+        Native Method Libraries
+        The Native Method Libraries contain native methods written in other programming languages, such as C or C++.
+        These
+        methods can be called by the JVM using the JNI.
+    </li>
+    <img src="https://www.javainterviewpoint.com/wp-content/uploads/2016/01/JVM-Architecture.png" />
+    <h1>JVM start up</h1>
+    <ul>
+        <li>loads intital class, using the bootstrap loader</li>
+        <li>links the intial class</li>
+        <li>initial it</li>
+        <li>invoke public static void main</li>
+        <li>for each class file jvm stores information in Method Area</li>
+        <li>after loading each class file. jvm create an object of type java.lang.Class to represent the file in heap memory</li>
+        <li>Method area: JVM creates run time constant pool for per class/ interface it loads into memory</li>
+        <li>constant_pool tabel in the binary representation of class or interface</li>
+        <li>Linking: ver</li>
+    </ul>
 </body>
 
 </html>
