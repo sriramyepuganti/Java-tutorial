@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>IOC: inversion of control</h1>
+    <p>Inversion of control is a pattern used to decouple the dependencies between layers and components in the system.
+    </p>
+    <h1>Introduction</h1>
+    <ul>
+        <li>Apache Maven is a software project management and comprehension tool</li>
+        <li>Based on the concept of a project object model (POM)</li>
+        <li>Maven can manage a project's build, reporting and documentation from a central piece of information.</li>
+    </ul>
+    <h1>xml</h1>
+    <ul>
+        <li>project dependencies</li>
+        <li>plugins</li>
+        <li>goals</li>
+        <li>build profiles</li>
+        <li> project version</li>
+        <li> developers</li>
+        <li> mailing list</li>
+        <li>project: This is the root element of the pom.xml file. It defines the basic information about the project,
+            such as the project name, version, and description.</li>
+        <li>modelVersion: This specifies the version of the Project Object Model (POM) that the file uses. It should be
+            set to 4.0.0 for Maven 2 and newer.</li>
+        <li>groupId: This is a unique identifier for the project group or organization. It typically follows the reverse
+            domain name notation, such as com.example.</li>
+        <li>artifactId: This is a unique identifier for the project artifact (or module). It is usually the name of the
+            project, such as my-project.</li>
+        <li>version: This is the version of the project artifact. It typically follows the Major.Minor.Patch format,
+            such as 1.0.0.</li>
+        <li>dependencies: This is a list of dependencies that the project requires to build and run. Each dependency has
+            its own groupId, artifactId, and version specified.</li>
+        <li>build: This element describes how to build the project. It can include information about the build process,
+            such as the source directory, the output directory, and plugins to use.</li>
+        <li>plugins: This is a list of plugins that the project uses to build and run. Each plugin has its own groupId,
+            artifactId, and version specified.</li>
+        <li>repositories: This is a list of repositories where Maven can find the project's dependencies and plugins. By
+            default, Maven looks in the central repository, but additional repositories can be specified here.</li>
+        <li>profiles: This is a way to define different build settings for different environments (such as development,
+            testing, or production). Profiles can include dependencies, plugins, and other build settings.</li>
+
+        <li>This is the version of the project. Along with the groupId, It is used within an artifact's repository to
+            separate versions from each other. For example −
+
+            com.company.bank:consumer-banking:1.0</li>
+        <li>Maven local repository is a folder location on your machine. It gets created when you run any maven command
+            for the first time.</li>
+        <localRepository>C:/MyLocalRepository</localRepository>
+        <li>Maven central repository is repository provided by Maven community. It contains a large number of commonly
+            used libraries.
+
+        </li>
+        <li>Maven does not find a mentioned dependency in central repository as well. It then stops the build process
+            and output error message to console. To prevent such situation, Maven provides concept of Remote Repository,
+        </li>
+    </ul>
+    <h1>plugins</h1>
+    <ul>
+        <li>Maven is actually a plugin execution framework where every task is actually done by plugins. Maven Plugins
+            are generally used to −
+        <li>create jar file,
+            create war file,
+            compile code files,
+            unit testing of code,
+            create project documentation,
+            create project reports</li>
+        </li>
+
+    </ul>
+    <h1>dependency</h1>
+    <ul>
+        <li>Maven does the dependency management using the concept of Repositories</li>
+    </ul>
+    <h1>Create a proejct</h1>
+    <ul>
+        <li>The syntax to generate the project architecture is given below:</li>
+        <li>mvn archetype:generate -DgroupId=groupid -DartifactId=artifactid   
+            -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=booleanValue</li>
+    </ul>
+</body>
+
+</html>
