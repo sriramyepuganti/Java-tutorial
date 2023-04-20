@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>@Configuration: Used to indicate that a class declares one or more @Bean methods. These classes are
+            processed by the Spring container to generate bean definitions and service requests for those beans at
+            runtime.</p>
+    </div>
+    <div>
+        <p>@Bean: Indicates that a method produces a bean to be managed by the Spring container. This is one of the
+            most used and important spring annotation</p>
+        <ul>
+            <li>name – allows you give name for bean</li>
+            <li>initMethod – allows you to choose method which will be invoked on context register</li>
+
+            <li>destroyMethod – allows you to choose method which will be invoked on context shutdown</li>
+            <li>@Bean(name = "", initMethod= "", destroyMethod="")</li>
+        </ul>
+    </div>
+    <div>
+        <p>@PreDestroy and @PostConstruct are alternative way for bean initMethod and destroyMethod</p>
+    </div>
+    <div>
+        <p>@ComponentScan: Configures component scanning directives for use with @Configuration classes</p>
+    </div>
+    <div>
+        <p>@Component: Indicates that an annotated class is a “component”. Such classes are considered as candidates for
+            auto-detection when using annotation-based configuration and classpath scanning.</p>
+    </div>
+    <div>
+        <p>@Service
+            This annotation is used on a class. The @Service marks a Java class that performs some service, such as execute business logic, perform calculations and call external APIs.</p>
+    </div>
+    <div>
+        <p>@Repository
+            This annotation is used on Java classes which directly access the database. The @Repository annotation works as marker for any class that fulfills the role of repository or Data Access Object.
+            
+            </p>
+    </div>
+    <div>
+        <p>@Autowired annotation is applied to the fields, setter methods, and constructors. It injects object
+            dependency implicitly</p>
+    </div>
+    <div>
+        <p>@Profile: If you want Spring to use a @Component class or a @Bean method only when a specific profile is
+            active then you can mark it with @Profile.</p>
+        <p>@Profile("developer")</p>
+    </div>
+    <div>
+        <p>@Required
+            This annotation is applied on bean setter methods. Consider a scenario where you need to enforce a required
+            property. The @Required annotation indicates that the affected bean must be populated at configuration time
+            with the required property. Otherwise an exception of type BeanInitializationException is thrown.</p>
+    </div>
+    <div>
+        <p>@Qualifier
+            This annotation is used along with @Autowired annotation. When you need more control of the dependency injection process, @Qualifier can be used. @Qualifier can be specified on individual constructor arguments or method parameters</p>
+    </div>
+    <div>
+        <p>@Lazy
+            This annotation is used on component classes. By default all autowired dependencies are created and configured at startup. But if you want to initialize a bean lazily, you can use @Lazy annotation over the class.</p>
+    </div>
+    <div>
+        <p>@Value
+            This annotation is used at the field, constructor parameter, and method parameter level. The @Value annotation indicates a default value expression for the field or parameter to initialize the property </p>
+    </div>
+    <div>
+        <p>@Controller
+            The @Controller annotation is used to indicate the class is a Spring controller. This annotation can be used to identify controllers for Spring MVC or Spring WebFlux.
+            
+            </p>
+    </div>
+    <div>
+        <p>@EnableAutoConfiguration
+            This annotation is usually placed on the main application class. The @EnableAutoConfiguration annotation implicitly defines a base “search package”. This annotation tells Spring Boot to start adding beans based on classpath settings, other beans, and various property settings.</p>
+    </div>
+    <div>
+        <p>@CookieValue
+            This annotation is used at method parameter level. @CookieValue is used as argument of request mapping method</p>
+            <p>@CookieValue "JSESSIONID" String cookie</p>
+    </div>
+    <div>
+        <p>@CrossOrigin
+            This annotation is used both at class and method level to enable cross origin requests</p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+</body>
+
+</html>
